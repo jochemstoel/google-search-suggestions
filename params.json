@@ -1,0 +1,6 @@
+{
+  "name": "Google Search Suggestions (PHP)",
+  "tagline": "This PHP class will return 10 Google Search suggestions for any given language and phrase(s)",
+  "body": "<img src=\"http://jochemstoel.github.io/img/PHP_Logo.png\">\r\n\r\n# Google Search Suggestions\r\nThis PHP class will return 10 Google Search suggestions for any given language and phrase(s)\r\n\r\n## Usage:\r\nVery difficult.\r\n\r\n```php \r\n<?php\r\ninclude 'Suggest.php';\r\n$suggest = new Suggest('where do i ', 'en');\r\nprint_r($suggest->data);\r\n?>\r\n```\r\n\r\nResult:\r\n<pre>\r\nArray\r\n(\r\n    [0] = where do i live\r\n    [1] = where do i register to vote\r\n    [2] = where do i vote\r\n    [3] = where do i get a passport\r\n    [4] = where do i go from here\r\n    [5] = where do i want to eat\r\n    [6] = where do i begin\r\n    [7] = where do i get a money order\r\n    [8] = where do i apply for a passport\r\n    [9] = where do i belong\r\n)\r\n</pre>\r\n\r\nIt will return cached data if a cache file for the search query / language combination already exists in the <i>Cache</i> folder. Make sure that the directory is writeable.\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

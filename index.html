@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Google Search Suggestions (PHP) by jochemstoel</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Google Search Suggestions (PHP)</h1>
+        <p>This PHP class will return 10 Google Search suggestions for any given language and phrase(s)</p>
+
+        <p class="view"><a href="https://github.com/jochemstoel/google-search-suggestions">View the Project on GitHub <small>jochemstoel/google-search-suggestions</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jochemstoel/google-search-suggestions/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jochemstoel/google-search-suggestions/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jochemstoel/google-search-suggestions">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="http://jochemstoel.github.io/img/PHP_Logo.png"></p>
+
+<h1>
+<a id="google-search-suggestions" class="anchor" href="#google-search-suggestions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google Search Suggestions</h1>
+
+<p>This PHP class will return 10 Google Search suggestions for any given language and phrase(s)</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage:</h2>
+
+<p>Very difficult.</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">'</span>Suggest.php<span class="pl-pds">'</span></span>;</span>
+<span class="pl-s1"><span class="pl-smi">$suggest</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Suggest</span>(<span class="pl-s"><span class="pl-pds">'</span>where do i <span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>en<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1"><span class="pl-c1">print_r</span>(<span class="pl-smi">$suggest</span><span class="pl-k">-&gt;</span><span class="pl-smi">data</span>);</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p>Result:</p>
+
+<pre>
+Array
+(
+    [0] = where do i live
+    [1] = where do i register to vote
+    [2] = where do i vote
+    [3] = where do i get a passport
+    [4] = where do i go from here
+    [5] = where do i want to eat
+    [6] = where do i begin
+    [7] = where do i get a money order
+    [8] = where do i apply for a passport
+    [9] = where do i belong
+)
+</pre>
+
+<p>It will return cached data if a cache file for the search query / language combination already exists in the <i>Cache</i> folder. Make sure that the directory is writeable.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jochemstoel">jochemstoel</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
